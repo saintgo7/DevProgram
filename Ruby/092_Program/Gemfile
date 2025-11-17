@@ -1,0 +1,9 @@
+# Gemfile for Factory Pattern
+
+source 'https://rubygems.org'
+
+ruby '>= 2.7.0'
+
+# Add your gem dependencies here
+# gem 'sinatra'
+# gem 'rails'

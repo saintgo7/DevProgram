@@ -1,8 +1,8 @@
 # DevProgram
 
-**1,700 Professional Programming Examples Across 15 Languages** 🎉
+**2,100 Professional Programming Examples Across 19 Languages** 🎉
 
-A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across fifteen major programming languages and frameworks.
+A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across nineteen major programming languages and frameworks.
 
 ---
 
@@ -25,7 +25,11 @@ A comprehensive collection of practical, production-ready programs demonstrating
 | **SwiftUI** | 100 | 4,036 | 40.4 | ✅ Complete |
 | **Jetpack Compose** | 100 | 5,911 | 59.1 | ✅ Complete |
 | **Xamarin** | 100 | 6,076 | 60.8 | ✅ Complete |
-| **Total** | **1,700** | **75,969** | **44.7** | ✅ |
+| **React** | 100 | 12,311 | 123.1 | ✅ Complete |
+| **PHP** | 100 | 5,167 | 51.7 | ✅ Complete |
+| **C++** | 100 | 2,033 | 20.3 | ✅ Complete |
+| **Ruby** | 100 | 1,300 | 13.0 | ✅ Complete |
+| **Total** | **2,100** | **96,780** | **46.1** | ✅ |
 
 ---
 
@@ -85,12 +89,88 @@ DevProgram/
 │   │   └── pubspec.yaml
 │   └── ...
 │
-└── ReactNative/                 # 100 React Native programs
-    ├── README.md
+├── ReactNative/                 # 100 React Native programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   ├── App.tsx
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   └── ...
+│
+├── Kotlin/                      # 100 Kotlin programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   └── Main.kt
+│   └── ...
+│
+├── Swift/                       # 100 Swift programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   ├── main.swift
+│   │   └── Package.swift
+│   └── ...
+│
+├── VueJS/                       # 100 Vue.js programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   ├── App.vue
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   └── ...
+│
+├── Angular/                     # 100 Angular programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   ├── app.component.ts
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   └── ...
+│
+├── SwiftUI/                     # 100 SwiftUI programs
+│   ├── 001_Program/
+│   │   ├── ContentView.swift
+│   │   └── Package.swift
+│   └── ...
+│
+├── JetpackCompose/              # 100 Jetpack Compose programs
+│   ├── 001_Program/
+│   │   ├── MainActivity.kt
+│   │   └── build.gradle
+│   └── ...
+│
+├── Xamarin/                     # 100 Xamarin programs
+│   ├── 001_Program/
+│   │   ├── App.cs
+│   │   └── Program001.csproj
+│   └── ...
+│
+├── React/                       # 100 React programs
+│   ├── 001_Program/
+│   │   ├── src/
+│   │   │   ├── App.js
+│   │   │   ├── App.css
+│   │   │   ├── index.js
+│   │   │   └── index.css
+│   │   ├── public/
+│   │   │   └── index.html
+│   │   └── package.json
+│   └── ...
+│
+├── PHP/                         # 100 PHP programs
+│   ├── 001_Program/
+│   │   └── index.php
+│   └── ...
+│
+├── CPP/                         # 100 C++ programs
+│   ├── 001_Program/
+│   │   ├── main.cpp
+│   │   └── Makefile
+│   └── ...
+│
+└── Ruby/                        # 100 Ruby programs
     ├── 001_Program/
-    │   ├── App.tsx
-    │   ├── package.json
-    │   └── tsconfig.json
+    │   ├── main.rb
+    │   └── Gemfile
     └── ...
 ```
 
@@ -260,6 +340,241 @@ npx react-native start
 - React Native CLI
 - Xcode (for iOS) or Android Studio (for Android)
 - iOS Simulator or Android Emulator
+
+### Kotlin Programs
+
+```bash
+# Navigate to a Kotlin program
+cd Kotlin/001_Program
+
+# Compile with kotlinc
+kotlinc Main.kt -include-runtime -d program.jar
+java -jar program.jar
+
+# Or use Kotlin REPL
+kotlinc -script Main.kt
+```
+
+**Requirements:**
+- Kotlin 1.8+
+- JDK 8 or higher
+- IntelliJ IDEA recommended
+
+### Swift Programs
+
+```bash
+# Navigate to a Swift program
+cd Swift/001_Program
+
+# Run with Swift compiler
+swift main.swift
+
+# Or build and run
+swiftc main.swift -o program
+./program
+
+# With Swift Package Manager
+swift run
+```
+
+**Requirements:**
+- Swift 5.7+
+- Xcode 14+ (macOS)
+- Swift toolchain for Linux
+
+### Vue.js Programs
+
+```bash
+# Navigate to a Vue.js program
+cd VueJS/001_Program
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+**Requirements:**
+- Node.js 18+
+- Vue 3.3+
+- npm or yarn
+
+### Angular Programs
+
+```bash
+# Navigate to an Angular program
+cd Angular/001_Program
+
+# Install dependencies
+npm install
+
+# Run development server
+npm start
+# Or: ng serve
+
+# Build for production
+npm run build
+# Or: ng build
+```
+
+**Requirements:**
+- Node.js 18+
+- Angular CLI 17+
+- TypeScript 5.0+
+
+### SwiftUI Programs
+
+```bash
+# Navigate to a SwiftUI program
+cd SwiftUI/001_Program
+
+# Run with Swift Package Manager
+swift run
+
+# Or build
+swift build
+./build/debug/Program001
+```
+
+**Requirements:**
+- Xcode 14+
+- macOS 12+ / iOS 15+
+- Swift 5.7+
+
+### Jetpack Compose Programs
+
+```bash
+# Navigate to a Jetpack Compose program
+cd JetpackCompose/001_Program
+
+# Compile with kotlinc
+kotlinc -classpath $ANDROID_SDK/platforms/android-33/android.jar MainActivity.kt
+
+# Or use Android Studio
+# Import project and run on emulator/device
+```
+
+**Requirements:**
+- Android Studio Hedgehog+
+- Kotlin 1.9+
+- Android SDK 33+
+- Gradle 8.0+
+
+### Xamarin Programs
+
+```bash
+# Navigate to a Xamarin program
+cd Xamarin/001_Program
+
+# Build with MSBuild
+msbuild Program001.csproj
+
+# Or use dotnet
+dotnet build
+dotnet run
+
+# Or use Visual Studio
+# Import project and run on emulator/device
+```
+
+**Requirements:**
+- .NET 6.0+
+- Xamarin.Forms 5.0+
+- Visual Studio 2022 recommended
+- Android SDK / Xcode for mobile
+
+### React Programs
+
+```bash
+# Navigate to a React program
+cd React/001_Program
+
+# Install dependencies
+npm install
+
+# Run development server
+npm start
+
+# Build for production
+npm run build
+```
+
+**Requirements:**
+- Node.js 18+
+- React 18.2+
+- npm or yarn
+- Modern web browser
+
+### PHP Programs
+
+```bash
+# Navigate to a PHP program
+cd PHP/001_Program
+
+# Run with PHP built-in server
+php -S localhost:8000 index.php
+
+# Or run directly
+php index.php
+
+# With Apache/Nginx
+# Access via http://localhost/001_Program/
+```
+
+**Requirements:**
+- PHP 7.4+
+- Apache/Nginx (optional)
+- MySQL/PostgreSQL (for database programs)
+
+### C++ Programs
+
+```bash
+# Navigate to a C++ program
+cd CPP/001_Program
+
+# Compile and run with make
+make
+./program
+
+# Or compile directly
+g++ -std=c++17 -o program main.cpp
+./program
+
+# Clean build files
+make clean
+```
+
+**Requirements:**
+- GCC 9+ or Clang 10+
+- C++17 support
+- Make (optional)
+
+### Ruby Programs
+
+```bash
+# Navigate to a Ruby program
+cd Ruby/001_Program
+
+# Run directly
+ruby main.rb
+
+# Or make executable
+chmod +x main.rb
+./main.rb
+
+# Install dependencies (if Gemfile exists)
+bundle install
+bundle exec ruby main.rb
+```
+
+**Requirements:**
+- Ruby 2.7+
+- Bundler (optional)
+- RubyGems
 
 ---
 

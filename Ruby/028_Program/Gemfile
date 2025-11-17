@@ -1,0 +1,9 @@
+# Gemfile for Conditional Statements
+
+source 'https://rubygems.org'
+
+ruby '>= 2.7.0'
+
+# Add your gem dependencies here
+# gem 'sinatra'
+# gem 'rails'
