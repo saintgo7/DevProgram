@@ -1,15 +1,49 @@
 #!/usr/bin/env python3
-# Email Validator
-import re
+"""
+Web Tool 103
+Web automation tool 103
+"""
+
+import urllib.request
+import urllib.error
+from typing import Optional
+
+
+def fetch_url(url: str) -> Optional[str]:
+    """Fetch content from a URL."""
+    try:
+        with urllib.request.urlopen(url) as response:
+            content = response.read().decode('utf-8')
+            return content
+    except urllib.error.URLError as e:
+        print(f"Error fetching URL: {e}")
+        return None
+
 
 def main():
-    email = input("Email: ")
-    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    
-    if re.match(pattern, email):
-        print("Valid email!")
+    """Main function."""
+    print("=== Web Tool 103 ===")
+    print("Web automation tool 103\n")
+
+    url = input("Enter URL: ").strip()
+
+    if not url:
+        print("Error: URL required!")
+        return
+
+    if not url.startswith(('http://', 'https://')):
+        url = 'https://' + url
+
+    print(f"Fetching: {url}")
+    content = fetch_url(url)
+
+    if content:
+        print(f"\nReceived {len(content)} characters")
+        print(f"\nFirst 500 characters:")
+        print(content[:500])
     else:
-        print("Invalid email!")
+        print("Failed to fetch URL")
+
 
 if __name__ == "__main__":
     main()
