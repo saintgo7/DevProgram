@@ -1,8 +1,8 @@
 # DevProgram
 
-**2,100 Professional Programming Examples Across 19 Languages** 🎉
+**2,600 Professional Programming Examples Across 21 Languages** 🚀
 
-A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across nineteen major programming languages and frameworks.
+A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across twenty-one major programming languages and frameworks.
 
 ---
 
@@ -26,10 +26,12 @@ A comprehensive collection of practical, production-ready programs demonstrating
 | **Jetpack Compose** | 100 | 5,911 | 59.1 | ✅ Complete |
 | **Xamarin** | 100 | 6,076 | 60.8 | ✅ Complete |
 | **React** | 100 | 12,311 | 123.1 | ✅ Complete |
-| **PHP** | 100 | 5,167 | 51.7 | ✅ Complete |
-| **C++** | 100 | 2,033 | 20.3 | ✅ Complete |
-| **Ruby** | 100 | 1,300 | 13.0 | ✅ Complete |
-| **Total** | **2,100** | **96,780** | **46.1** | ✅ |
+| **PHP** | 200 | 10,347 | 51.7 | ✅ Complete |
+| **C++** | 200 | 3,733 | 18.7 | ✅ Complete |
+| **Ruby** | 200 | 2,200 | 11.0 | ✅ Complete |
+| **C** | 100 | 1,700 | 17.0 | ✅ Complete |
+| **Scala** | 100 | 1,300 | 13.0 | ✅ Complete |
+| **Total** | **2,600** | **107,560** | **41.4** | ✅ |
 
 ---
 
@@ -167,10 +169,22 @@ DevProgram/
 │   │   └── Makefile
 │   └── ...
 │
-└── Ruby/                        # 100 Ruby programs
+├── Ruby/                        # 200 Ruby programs
+│   ├── 001_Program/
+│   │   ├── main.rb
+│   │   └── Gemfile
+│   └── ...
+│
+├── C/                           # 100 C programs
+│   ├── 001_Program/
+│   │   ├── main.c
+│   │   └── Makefile
+│   └── ...
+│
+└── Scala/                       # 100 Scala programs
     ├── 001_Program/
-    │   ├── main.rb
-    │   └── Gemfile
+    │   ├── Main.scala
+    │   └── build.sbt
     └── ...
 ```
 
@@ -575,6 +589,52 @@ bundle exec ruby main.rb
 - Ruby 2.7+
 - Bundler (optional)
 - RubyGems
+- Ruby on Rails 7.0+ (for Rails programs 101-200)
+
+### C Programs
+
+```bash
+# Navigate to a C program
+cd C/001_Program
+
+# Compile and run with make
+make
+./program
+
+# Or compile directly
+gcc -std=c11 -Wall -o program main.c
+./program
+
+# Clean build files
+make clean
+```
+
+**Requirements:**
+- GCC 9+ or Clang 10+
+- C11 standard support
+- Make (optional)
+
+### Scala Programs
+
+```bash
+# Navigate to a Scala program
+cd Scala/001_Program
+
+# Run with Scala CLI
+scala Main.scala
+
+# Or compile and run
+scalac Main.scala
+scala Program001
+
+# Using sbt
+sbt run
+```
+
+**Requirements:**
+- Scala 3.3+
+- JDK 11+
+- SBT (Scala Build Tool)
 
 ---
 
