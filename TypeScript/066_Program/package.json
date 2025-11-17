@@ -1,0 +1,22 @@
+{
+  "name": "program-066",
+  "version": "1.0.0",
+  "description": "TypeScript program 66",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node index.js",
+    "dev": "ts-node index.ts"
+  },
+  "keywords": [
+    "typescript",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

@@ -1,8 +1,8 @@
 # DevProgram
 
-**500 Professional Programming Examples Across Java, C#, and Python**
+**800 Professional Programming Examples Across 6 Languages**
 
-A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across three major programming languages.
+A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across six major programming languages.
 
 ---
 
@@ -13,7 +13,10 @@ A comprehensive collection of practical, production-ready programs demonstrating
 | **Java** | 100 | 4,656 | 46.6 | ✅ Complete |
 | **C#** | 200 | 7,387 | 36.9 | ✅ Complete |
 | **Python** | 200 | 10,561 | 52.8 | ✅ Complete |
-| **Total** | **500** | **22,604** | **45.2** | ✅ |
+| **Go** | 100 | 2,363 | 23.6 | ✅ Complete |
+| **Rust** | 100 | 1,820 | 18.2 | ✅ Complete |
+| **TypeScript** | 100 | 1,785 | 17.9 | ✅ Complete |
+| **Total** | **800** | **28,572** | **35.7** | ✅ |
 
 ---
 
@@ -29,25 +32,41 @@ DevProgram/
 │   ├── 01_Calculator/
 │   │   └── Calculator.java
 │   ├── 02_TodoList/
-│   ├── ...
-│   └── 100_SystemMonitor/
+│   └── ...
 │
 ├── CSharp/                      # 200 C# programs
-│   ├── README.md               # C# specific guide
+│   ├── README.md
 │   ├── 001_Program/
 │   │   └── Program.cs
-│   ├── 002_Program/
-│   ├── ...
-│   └── 200_Program/
+│   └── ...
 │
-└── Python/                      # 200 Python programs
-    ├── README.md               # Python specific guide
-    ├── requirements.txt        # Python dependencies
+├── Python/                      # 200 Python programs
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── 001_Program/
+│   │   └── program.py
+│   └── ...
+│
+├── Go/                          # 100 Go programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   └── main.go
+│   └── ...
+│
+├── Rust/                        # 100 Rust programs
+│   ├── README.md
+│   ├── 001_Program/
+│   │   ├── main.rs
+│   │   └── Cargo.toml
+│   └── ...
+│
+└── TypeScript/                  # 100 TypeScript programs
+    ├── README.md
     ├── 001_Program/
-    │   └── program.py
-    ├── 002_Program/
-    ├── ...
-    └── 200_Program/
+    │   ├── index.ts
+    │   ├── package.json
+    │   └── tsconfig.json
+    └── ...
 ```
 
 ---
@@ -107,6 +126,64 @@ chmod +x program.py
 **Requirements:**
 - Python 3.6 or higher
 - Optional: Install dependencies with `pip install -r Python/requirements.txt`
+
+### Go Programs
+
+```bash
+# Navigate to a Go program
+cd Go/001_Program
+
+# Run directly
+go run main.go
+
+# Or build and run
+go build main.go
+./main
+```
+
+**Requirements:**
+- Go 1.16 or higher
+- No external dependencies (uses standard library)
+
+### Rust Programs
+
+```bash
+# Navigate to a Rust program
+cd Rust/001_Program
+
+# Run with Cargo
+cargo run
+
+# Or build release version
+cargo build --release
+./target/release/program_001
+```
+
+**Requirements:**
+- Rust 1.70+ and Cargo
+- Each program has its own Cargo.toml
+
+### TypeScript Programs
+
+```bash
+# Navigate to a TypeScript program
+cd TypeScript/001_Program
+
+# Install dependencies
+npm install
+
+# Run with ts-node
+npm run dev
+
+# Or build and run
+npm run build
+npm start
+```
+
+**Requirements:**
+- Node.js 18+
+- TypeScript 5.0+
+- npm or yarn
 
 ---
 
@@ -403,10 +480,10 @@ This repository is created for educational and professional development purposes
 ## 📈 Project Statistics
 
 **Created**: 2025-11-17
-**Languages**: Java, C#, Python
-**Total Programs**: 500
-**Total Code Lines**: 22,604
-**Categories**: 15+ different categories
+**Languages**: Java, C#, Python, Go, Rust, TypeScript
+**Total Programs**: 800
+**Total Code Lines**: 28,572
+**Categories**: 20+ different categories
 **Complexity Range**: Beginner to Advanced
 
 ---
