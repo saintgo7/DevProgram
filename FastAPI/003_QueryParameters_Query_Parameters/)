@@ -1,0 +1,8 @@
+return {
+        "query": q,
+        "page": page,
+        "size": size,
+        "results": f"Search results for '{q}'"
+    }
+
+@app.get("/tags/")

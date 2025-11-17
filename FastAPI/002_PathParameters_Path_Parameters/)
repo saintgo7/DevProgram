@@ -1,0 +1,3 @@
+return {"user_id": user_id}
+
+@app.get("/models/{model_name}")

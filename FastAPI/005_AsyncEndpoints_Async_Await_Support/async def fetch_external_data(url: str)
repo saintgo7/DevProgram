@@ -1,0 +1,5 @@
+async with httpx.AsyncClient() as client:
+        response = await client.get(url)
+        return response.json()
+
+@app.get("/users/{user_id}")

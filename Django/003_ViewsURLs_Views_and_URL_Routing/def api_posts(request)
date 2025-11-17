@@ -1,0 +1,2 @@
+posts = Post.objects.values('id', 'title', 'created_at')
+    return JsonResponse(list(posts), safe=False)

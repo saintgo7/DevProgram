@@ -1,0 +1,3 @@
+return {"message": "Hello FastAPI!", "docs": "/docs"}
+
+@app.get("/hello/{name}")

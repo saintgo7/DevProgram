@@ -1,0 +1,8 @@
+posts_count = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Author
+        fields = ['id', 'name', 'email', 'bio', 'posts_count', 'created_at']
+
+    def get_posts_count(self, obj):
+        return obj.posts.count()

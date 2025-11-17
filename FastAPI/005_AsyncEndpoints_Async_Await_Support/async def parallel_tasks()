@@ -1,0 +1,9 @@
+# Run multiple async tasks in parallel
+    results = await asyncio.gather(
+        fetch_user_from_db(1),
+        fetch_user_from_db(2),
+        fetch_user_from_db(3)
+    )
+    return {"users": results}
+
+@app.get("/background")

@@ -1,0 +1,7 @@
+alexnet = "alexnet"
+    resnet = "resnet"
+    lenet = "lenet"
+
+@app.get("/users/{user_id}")
+def get_user(
+    user_id: int = Path(..., title="The ID of the user", ge=1, le=1000)

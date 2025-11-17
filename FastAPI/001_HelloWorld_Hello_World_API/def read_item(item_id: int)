@@ -1,0 +1,3 @@
+return {"item_id": item_id, "name": f"Item {item_id}"}
+
+# Run with: uvicorn main:app --reload

@@ -1,0 +1,4 @@
+def get(self, request):
+        return render(request, 'about.html')
+
+# Generic ListView

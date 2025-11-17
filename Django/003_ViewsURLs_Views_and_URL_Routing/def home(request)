@@ -1,0 +1,3 @@
+return render(request, 'home.html')
+
+# Class-based view

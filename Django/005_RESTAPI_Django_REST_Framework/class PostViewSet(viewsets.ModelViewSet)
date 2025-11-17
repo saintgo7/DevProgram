@@ -1,0 +1,9 @@
+queryset = Post.objects.all()
+    serializer_class = PostSerializer
+
+    @action(detail=True, methods=['post'])
+    def publish(self, request, pk=None):
+        post = self.get_object()
+        post.status = 'published'
+        post.save()
+        return Response({'status': 'post published'})

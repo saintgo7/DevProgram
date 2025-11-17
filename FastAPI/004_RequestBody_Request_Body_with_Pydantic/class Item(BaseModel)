@@ -1,0 +1,6 @@
+name: str
+    description: Optional[str] = None
+    price: float = Field(..., gt=0)
+    tax: Optional[float] = None
+
+@app.post("/users/")

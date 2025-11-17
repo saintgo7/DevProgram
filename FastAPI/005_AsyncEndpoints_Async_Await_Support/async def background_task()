@@ -1,0 +1,9 @@
+async def long_running_task():
+        await asyncio.sleep(2)
+        print("Background task completed")
+
+    # Start background task (fire and forget)
+    asyncio.create_task(long_running_task())
+    return {"message": "Task started in background"}
+
+httpx

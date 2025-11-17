@@ -1,0 +1,10 @@
+name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control'}))
+    subject = forms.CharField(max_length=200)
+    message = forms.CharField(widget=forms.Textarea(attrs={'rows': 5}))
+
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if not email.endswith('@example.com'):
+            raise forms.ValidationError('Email must be from example.com domain')
+        return email

@@ -1,0 +1,6 @@
+# Example: fetch from external API
+    # data = await fetch_external_data("https://api.example.com/data")
+    await asyncio.sleep(0.5)  # Simulate async operation
+    return {"message": "Async operation completed"}
+
+@app.get("/parallel")

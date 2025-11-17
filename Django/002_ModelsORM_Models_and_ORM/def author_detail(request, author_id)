@@ -1,0 +1,3 @@
+author = get_object_or_404(Author, pk=author_id)
+    posts = author.posts.all()
+    return render(request, 'author.html', {'author': author, 'posts': posts})

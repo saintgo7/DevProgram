@@ -1,0 +1,2 @@
+posts = Post.objects.filter(status='published').select_related('author')
+    return render(request, 'posts.html', {'posts': posts})
