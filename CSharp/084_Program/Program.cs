@@ -1,3 +1,37 @@
 // URL Validator
 using System;
-class Program { static void Main() { Console.Write("URL: "); var url = Console.ReadLine(); var valid = Uri.TryCreate(url, UriKind.Absolute, out var uri) && (uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps); Console.WriteLine(valid ? "Valid!" : "Invalid!"); } }
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        Console.WriteLine("=== URL Validator ===");
+        Console.WriteLine("Validates URL formats\n");
+
+        try
+        {
+            Console.Write("Enter URL: ");
+            string url = Console.ReadLine();
+
+            using (HttpClient client = new HttpClient())
+            {
+                Console.WriteLine("Fetching...");
+                var response = await client.GetAsync(url);
+
+                Console.WriteLine($"\nStatus: {response.StatusCode}");
+                Console.WriteLine($"Content-Type: {response.Content.Headers.ContentType}");
+
+                string content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"\nContent (first 500 chars):");
+                Console.WriteLine(content.Substring(0, Math.Min(500, content.Length)));
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+}

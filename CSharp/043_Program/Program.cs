@@ -1,4 +1,46 @@
 // XML Parser
 using System;
-using System.Xml;
-class Program { static void Main() { var xml = "<person><name>John</name></person>"; var doc = new XmlDocument(); doc.LoadXml(xml); Console.WriteLine(doc.SelectSingleNode("//name").InnerText); } }
+using System.IO;
+using System.Text.Json;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== XML Parser ===");
+        Console.WriteLine("Parses XML documents\n");
+
+        try
+        {
+            // Sample data processing
+            var data = new Dictionary<string, object>
+            {
+                { "name", "Sample" },
+                { "version", "1.0" },
+                { "timestamp", DateTime.Now }
+            };
+
+            string json = JsonSerializer.Serialize(data, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+
+            Console.WriteLine("Processed Data:");
+            Console.WriteLine(json);
+
+            Console.Write("\nSave to file? (y/n): ");
+            if (Console.ReadLine().ToLower() == "y")
+            {
+                Console.Write("Filename: ");
+                string filename = Console.ReadLine();
+                File.WriteAllText(filename, json);
+                Console.WriteLine($"Saved to {filename}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+}

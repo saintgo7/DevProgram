@@ -1,5 +1,34 @@
-// Async File Reader
+// Advanced Tool 161
 using System;
-using System.IO;
 using System.Threading.Tasks;
-class Program { static async Task Main() { Console.Write("File: "); var content = await File.ReadAllTextAsync(Console.ReadLine()); Console.WriteLine(content); } }
+using System.Linq;
+
+class Program
+{
+    static async Task Main()
+    {
+        Console.WriteLine("=== Advanced Tool 161 ===");
+        Console.WriteLine("Advanced system tool 161\n");
+
+        try
+        {
+            // Demonstrate async operation
+            Console.WriteLine("Processing...");
+
+            var tasks = Enumerable.Range(1, 5).Select(i => ProcessAsync(i));
+            await Task.WhenAll(tasks);
+
+            Console.WriteLine("\nAll tasks completed!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    static async Task ProcessAsync(int id)
+    {
+        await Task.Delay(100 * id);
+        Console.WriteLine($"Task {id} completed");
+    }
+}
