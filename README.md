@@ -1,8 +1,8 @@
 # DevProgram
 
-**1,000 Professional Programming Examples Across 8 Languages** 🎉
+**1,400 Professional Programming Examples Across 12 Languages** 🚀
 
-A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across eight major programming languages and frameworks.
+A comprehensive collection of practical, production-ready programs demonstrating real-world development patterns and best practices across twelve major programming languages and frameworks.
 
 ---
 
@@ -18,7 +18,11 @@ A comprehensive collection of practical, production-ready programs demonstrating
 | **TypeScript** | 100 | 1,785 | 17.9 | ✅ Complete |
 | **Flutter/Dart** | 100 | 6,392 | 63.9 | ✅ Complete |
 | **React Native** | 100 | 8,049 | 80.5 | ✅ Complete |
-| **Total** | **1,000** | **43,013** | **43.0** | ✅ |
+| **Kotlin** | 100 | 2,777 | 27.8 | ✅ Complete |
+| **Swift** | 100 | 3,133 | 31.3 | ✅ Complete |
+| **Vue.js** | 100 | 5,318 | 53.2 | ✅ Complete |
+| **Angular** | 100 | 5,705 | 57.1 | ✅ Complete |
+| **Total** | **1,400** | **59,946** | **42.8** | ✅ |
 
 ---
 
