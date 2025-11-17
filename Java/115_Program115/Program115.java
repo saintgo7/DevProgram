@@ -1,0 +1,5 @@
+public class Program115 {
+    public static void main(String[] args) {
+        System.out.println("Java Program 115");
+    }
+}

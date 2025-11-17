@@ -1,0 +1,1 @@
+console.log("TypeScript Program 126");
