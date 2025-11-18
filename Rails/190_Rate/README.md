@@ -1,0 +1,22 @@
+# Rate API
+
+## Description
+Rate RESTful API implementation in Rails.
+
+## Endpoints
+- GET    /api/rate - Get all Rates
+- GET    /api/rate/{id} - Get Rate by ID
+- POST   /api/rate - Create new Rate
+- PUT    /api/rate/{id} - Update Rate
+- DELETE /api/rate/{id} - Delete Rate
+
+## Usage
+```bash
+rails server
+```
+
+## Features
+- RESTful API design
+- CRUD operations
+- Rails best practices
+- JSON responses

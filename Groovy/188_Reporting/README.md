@@ -1,0 +1,15 @@
+# Reporting
+
+## Description
+Reporting implementation in Groovy.
+
+## Usage
+```bash
+# Compile/Run instructions for Groovy
+reporting.groovy
+```
+
+## Features
+- Groovy implementation
+- Clean code structure
+- Production-ready

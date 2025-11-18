@@ -1,0 +1,14 @@
+# DataWarehouse
+
+## Description
+DataWarehouse implementation in Dart.
+
+## Usage
+```bash
+dart datawarehouse.dart
+```
+
+## Features
+- Dart standalone application
+- Clean architecture
+- Null safety enabled

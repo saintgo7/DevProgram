@@ -1,0 +1,15 @@
+# TreeOperations
+
+## Description
+TreeOperations implementation in Zig.
+
+## Usage
+```bash
+# Compile/Run instructions for Zig
+treeoperations.zig
+```
+
+## Features
+- Zig implementation
+- Clean code structure
+- Production-ready

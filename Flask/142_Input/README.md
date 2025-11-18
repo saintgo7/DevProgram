@@ -1,0 +1,22 @@
+# Input API
+
+## Description
+Input RESTful API implementation in Flask.
+
+## Endpoints
+- GET    /api/input - Get all Inputs
+- GET    /api/input/{id} - Get Input by ID
+- POST   /api/input - Create new Input
+- PUT    /api/input/{id} - Update Input
+- DELETE /api/input/{id} - Delete Input
+
+## Usage
+```bash
+python app.py
+```
+
+## Features
+- RESTful API design
+- CRUD operations
+- Flask best practices
+- JSON responses

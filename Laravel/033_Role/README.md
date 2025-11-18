@@ -1,0 +1,22 @@
+# Role API
+
+## Description
+Role RESTful API implementation in Laravel.
+
+## Endpoints
+- GET    /api/role - Get all Roles
+- GET    /api/role/{id} - Get Role by ID
+- POST   /api/role - Create new Role
+- PUT    /api/role/{id} - Update Role
+- DELETE /api/role/{id} - Delete Role
+
+## Usage
+```bash
+php artisan serve
+```
+
+## Features
+- RESTful API design
+- CRUD operations
+- Laravel best practices
+- JSON responses
